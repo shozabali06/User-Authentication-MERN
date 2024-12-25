@@ -1,0 +1,38 @@
+# Node modules
+node_modules/
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment variables
+.env
+
+# Build output
+build/
+dist/
+
+# OS-specific files
+.DS_Store       # macOS
+Thumbs.db       # Windows
+
+# IDE or editor-specific files
+.vscode/
+.idea/
+*.swp           # vim temporary files
+
+# Dependency directories
+jspm_packages/
+
+# NPM package lock files (optional, some prefer to commit them)
+package-lock.json
+yarn.lock
+
+# Bower
+bower_components/
+
+# TypeScript
+*.tsbuildinfo
