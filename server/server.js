@@ -6,13 +6,15 @@ import connectDB from "./config/mongodb.js";
 import authRouter from "./routes/authRoutes.js";
 import userRouter from "./routes/userRoutes.js";
 
+const allowedOrigins = ["http://localhost:5173"];
+
 const app = express();
 const port = process.env.PORT || 4000;
 connectDB();
 
 app.use(express.json());
 app.use(cookieParser());
-app.use(cors({ credentials: true }));
+app.use(cors({ origin: allowedOrigins, credentials: true }));
 
 // API Endpoints
 app.get("/", (req, res) => {
