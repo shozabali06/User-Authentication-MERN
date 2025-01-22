@@ -1,7 +1,7 @@
 # MERN User Authentication System
 
 ## Live Demo
-[Click here to view the live demo](#) <!-- Replace # with the actual live demo link -->
+[https://mern-auth-fawn.vercel.app/](#) <!-- Replace # with the actual live demo link -->
 
 ## Features
 - User login and signup.
@@ -14,12 +14,12 @@
 
 1. Clone the repository:
 ```bash
-git clone <repository-url>
+git clone https://github.com/shozabali06/User-Authentication-MERN.git
 ```
 
 2. Navigate to the project directory:
 ```bash
-cd <repository-folder>
+cd User-Authentication-MERN
 ```
 
 ### Server Setup
