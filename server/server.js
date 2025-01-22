@@ -6,10 +6,10 @@ import connectDB from "./config/mongodb.js";
 import authRouter from "./routes/authRoutes.js";
 import userRouter from "./routes/userRoutes.js";
 
-const allowedOrigins = ["http://localhost:5173"];
+const allowedOrigins = [process.env.ORIGIN];
 
 const app = express();
-const port = process.env.PORT || 4000;
+const port = process.env.PORT || 3000;
 connectDB();
 
 app.use(express.json());

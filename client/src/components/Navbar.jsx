@@ -48,7 +48,7 @@ const Navbar = () => {
         </a>
 
         {userData ? (
-          <div className="w-10 h-10 flex justify-center items-center rounded-full bg-black text-white relative group">
+          <div className="w-10 h-10 flex justify-center items-center rounded-full bg-gray-800 text-white text-xl relative group">
             {userData.name[0].toUpperCase()}
             <div className="absolute hidden group-hover:block top-2 right-0 z-10 text-black rounded pt-10">
               <ul className="list-none m-0 p-2 bg-gray-100 text-sm rounded">
@@ -65,6 +65,12 @@ const Navbar = () => {
                   onClick={logout}
                   className="py-1 px-2 hover:bg-gray-200 cursor-pointer pr-10 rounded"
                 >
+                  Profile
+                </li>
+                <li
+                  onClick={logout}
+                  className="py-1 px-2 hover:bg-gray-200 cursor-pointer pr-10 rounded"
+                >
                   Logout
                 </li>
               </ul>
@@ -73,7 +79,7 @@ const Navbar = () => {
         ) : (
           <button
             onClick={() => navigate("/login")}
-            className="flex items-center gap-2 border border-gray-500 rounded-full px-6 py-2 text-gray-800 hover:bg-gray-100 transition-all"
+            className="flex items-center gap-2 border border-gray-800 rounded-full px-6 py-2 text-gray-800 hover:text-white hover:bg-gray-800 transition-all"
           >
             Login <img src={assets.arrow_icon} alt="arrow_icon" />
           </button>
