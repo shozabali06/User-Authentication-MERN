@@ -1,7 +1,7 @@
 # MERN User Authentication System
 
 ## Live Demo
-[https://mern-auth-fawn.vercel.app/](#) <!-- Replace # with the actual live demo link -->
+[Click here to see live demo](https://mern-auth-fawn.vercel.app/) <!-- Replace # with the actual live demo link -->
 
 ## Features
 - User login and signup.
